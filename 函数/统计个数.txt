@@ -1,0 +1,17 @@
+Sub test()
+'
+' test Macro
+'
+w = 1
+num = 1
+For i = 1 To 129 Step 1
+    If Range("F" & i).Value <> Range("F" & (i + 1)) Then
+        Range("G" & w).Value = Range("F" & i).Value
+        Range("H" & w).Value = num
+        w = w + 1
+        num = 1
+    Else
+        num = num + 1
+    End If
+Next
+End Sub

@@ -1,0 +1,12 @@
+Sub getColor()
+'
+' getColor Macro
+' white-16777215 yellow-65535
+    choosed = 0
+    For i = 2 To 1000002 Step 1
+        If Range("A" & i).Interior.Color <> "16777215" Then
+            choosed = choosed + 1
+        End If
+    Next
+    MsgBox (choosed)
+End Sub

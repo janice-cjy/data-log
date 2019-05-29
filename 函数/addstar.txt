@@ -1,0 +1,4 @@
+For i = 3 To 60 Step 1
+    Range("B" & i).Value = Range("B" & i).Value + "*"
+    
+Next

@@ -1,0 +1,9 @@
+Sub removeBlock()
+'
+' removeBlock Macro
+    For i = 1 To 485 Step 1
+       If Range("A" & i).Value = "" Then
+            Worksheets(1).Rows(i).Delete
+       End If
+    Next
+End Sub

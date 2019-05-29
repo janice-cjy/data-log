@@ -1,0 +1,13 @@
+Sub test()
+'
+' test Macro
+'
+
+    For i = 1 To 63 Step 1
+        ID = Split(Range("A" & i).Value, ",")(0)
+        Range("B" & i).Value = Split(Range("A" & i).Value, ",")(1)
+        Range("C" & i).Value = Split(Range("A" & i).Value, ",")(2)
+        Range("D" & i).Value = Split(Range("A" & i).Value, ",")(3)
+        Range("A" & i).Value = ID
+    Next
+End Sub

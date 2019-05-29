@@ -1,0 +1,6 @@
+For i = 1 To 12 Step 1
+    valueold = Range(D & i).Value
+    Range(D& i).Value = Split(valueold, ,)(1)
+    Range(F & i).Value = Split(valueold, ,)(0)
+    Range(H & i).Value = Split(valueold, ,)(2)
+Next

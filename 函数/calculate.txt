@@ -1,0 +1,13 @@
+Sub calculate()
+'
+' calculate Macro
+'
+    Sum = 0
+    For i = 2 To 364 Step 1
+        If Range("B" & i).Value = "…œ∫£" Then
+            Sum = Sum + Range("F" & i).Value
+        End If
+        
+    Next
+    MsgBox (Sum)
+End Sub

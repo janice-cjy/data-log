@@ -1,0 +1,7 @@
+Sub deleteRepeatItem()
+    for i=1 to 484 step 1
+        if range("A"&i).value = range("A"&(i+1)).value then
+            worksheets(1).rows(i+1).delete
+        end if
+    next
+End sub

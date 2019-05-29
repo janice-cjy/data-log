@@ -1,0 +1,25 @@
+Sub calculate()
+'
+' calculate Macro
+'
+    used_count = Array(0, 0, 0, 0, 0)
+    For i = 11 To 17 Step 1
+        Select Case Range("B" & i).Value
+            Case "001-ab级别"
+               used_count(0) = used_count(0) + Range("C" & i).Value
+            Case "002-现跑的数据"
+                MsgBox (used_count(1))
+               used_count(1) = used_count(1) + Range("C" & i).Value
+            Case "003-占线拒接"
+                used_count(2) = used_count(2) + Range("C" & i).Value
+            Case "004-无法接通"
+                used_count(3) = used_count(3) + Range("C" & i).Value
+            Case "005-其他（短信）"
+                used_count(4) = used_count(4) + Range("C" & i).Value
+        End Select
+    Next
+    For i = 0 To 4 Step 1
+        Range("C" & (i + 3)).Value = used_count(i)
+        Range("D" & (i + 3)).Value = Range("B" & (i + 3)).Value - Range("C" & (i + 3)).Value
+    Next
+End Sub

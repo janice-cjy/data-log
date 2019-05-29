@@ -1,0 +1,18 @@
+Sub splitItem()
+'对每一行的内容进行拆分和填写
+    For i = 1 To 238 Step 1
+        Length = UBound(Split(Range("A" & i).Value, "-"))
+        ID = Split(Range("A" & i).Value, "-")(0)
+        Name = ""
+        For j = 1 To Length Step 1
+            Name = Name & Split(Range("A" & i).Value, "-")(j)
+            If j <> Length Then
+                Name = Name & "-"
+            End If
+        Next
+        Range("A" & i).Value = ID
+        Range("B" & i).Value = Name
+        Range("C" & i).Value = "湖南"
+        
+    Next
+End Sub
