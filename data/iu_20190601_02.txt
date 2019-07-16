@@ -1,0 +1,10 @@
+2959465,app.compass.cn/*
+5920493,static.ktkt.com/*
+5920494,quanapi.yxcps.cn/*
+5920495,cdn1.qkzhi.com/*
+5920496,*.95105899.com/*
+5920497,thmobileapi.jingzhuan.cn/*
+5920498,shxld.bdcgw.cn/*
+5920499,quote.hs633.com/*
+5920500,ydgp.zslxt.com/*
+5920501,www.tgw360.com/*
